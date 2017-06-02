@@ -27,8 +27,8 @@ body {
 }
 
 #myName {
-	position: absolute;
-	left: 10%;
+	float: left;
+	margin-left: 10%;
 	width: 250px;
 	line-height: 75px;
 	text-align: center;
@@ -43,7 +43,7 @@ body {
 
 li {
 	float: right;
-	height: 75px;
+	height: 20px;
 	width: 10%;
 }
 
@@ -296,14 +296,19 @@ p {
 		background-color: purple;
 	}
 
+	#mainContent {
+		margin-left: 15px;
+	}
+
 	#topHeader {
-		height: 75px;
-		width: 88%;
-		margin-left: 10%;
+		height: 100px;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 	
 	#myName {
-		width: 88%;
+		float: none;
+		width: 100%;
 		margin-left: 0;
 	}
 
@@ -320,9 +325,26 @@ p {
 		width: 100%;
 	}
 
+	ul {
+		width: 100%;
+		text-align: center;
+	}
+
 	li {
-		float: none;
 		height: 25px;
+		float: left;
+		padding-right: 65px;
+		padding-left: 65px;
+	}
+
+	li a {
+		padding-top: 5px;
+	}
+
+	.links {
+		border-left: solid;
+		border-right: none;
+		border-width: 1px;
 	}
 }
 
